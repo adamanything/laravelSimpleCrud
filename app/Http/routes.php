@@ -12,7 +12,7 @@
 */
 
 
-//Route::get('article/userArticles', 'ArticleController@userArticle');
+Route::get('article/userArticles', 'ArticleController@userArticle');
 
 Route::resource('article', 'ArticleController');
 Route::get('/', 'ArticleController@index');

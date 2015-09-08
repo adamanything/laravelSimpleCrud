@@ -18,11 +18,11 @@ class createEditArticleRequest extends Request {
             $isLoggedIn = true;
         }
 
-//        if(Request::input('ArticleUserId')){
-//            if(Request::input('ArticleUserId') != Auth::User()->id){
-//                $isLoggedIn = false;
-//            }
-//        }
+        if(Request::input('ArticleUserId')){
+            if(Request::input('ArticleUserId') != Auth::User()->id){
+                $isLoggedIn = false;
+            }
+        }
 
         return $isLoggedIn;
 

@@ -4,6 +4,7 @@
 
 @section('content')
 
+    @if(Auth::User()->id == $article->user_id)
 
     {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticleController@update', $article->id]]) !!}
         @include('partials.createEditForm', array('buttonText' => 'Edit Article'))
@@ -13,4 +14,5 @@
         {!! Form::submit('Delete Article', ['class' => 'btn btn-primary']) !!}
     {!! Form::close() !!}
 
+    @endif
 @stop
