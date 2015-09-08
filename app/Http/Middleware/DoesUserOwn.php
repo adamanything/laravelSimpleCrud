@@ -19,7 +19,7 @@ class DoesUserOwn {
             return $next($request);
         }
 
-        return redirect('article/create');
+        return redirect('article/create')->with('flash_message', 'You must own the article to make a change.');
 	}
 
 }

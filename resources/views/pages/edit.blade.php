@@ -5,7 +5,7 @@
 @section('content')
 
 
-    {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticleController@update', $article->user_id]]) !!}
+    {!! Form::model($article, ['method' => 'PATCH', 'action' => ['ArticleController@update', $article->id]]) !!}
         @include('partials.createEditForm', array('buttonText' => 'Edit Article'))
     {!! Form::close() !!}
 

@@ -11,14 +11,12 @@
 |
 */
 
+
+//Route::get('article/userArticles', 'ArticleController@userArticle');
+
 Route::resource('article', 'ArticleController');
-
-
 Route::get('/', 'ArticleController@index');
-
 Route::get('home', 'ArticleController@index');
-
-
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

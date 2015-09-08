@@ -86,12 +86,12 @@ class ArticleController extends Controller {
 	 */
 	public function update(createEditArticleRequest $request, $id)
 	{
-		$article = Article::findOrFail($id);
+		$article = Article::findOrFail(2);
         $article->title = $request->title;
         $article->body  = $request->body;
         $article->save();
 
-        return redirect('/article/');
+        return redirect('/article/')->with('flash_message', 'Article successfully changed.');
 	}
 
 	/**
@@ -103,7 +103,12 @@ class ArticleController extends Controller {
 	public function destroy($id)
 	{
 		Article::destroy($id);
-		return redirect('/article/');
+		return redirect('/article/')->with('flash_message', 'Article successfully deleted.');
 	}
+
+    public function userArticle(){
+        $articles = Article::where('user_id', Auth::user()->id)->get();
+        return view('pages.userArticles', compact('articles'));
+    }
 
 }
