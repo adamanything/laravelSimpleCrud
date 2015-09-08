@@ -35,8 +35,8 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34437087">
-              <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7350993">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#39#61#0#PHP" expanded="true" />
               </folding>
@@ -768,8 +768,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34437087">
-          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7350993">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="true" />
           </folding>

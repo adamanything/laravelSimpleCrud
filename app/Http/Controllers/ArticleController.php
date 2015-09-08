@@ -42,6 +42,9 @@ class ArticleController extends Controller {
 	 */
 	public function store(createEditArticleRequest $request)
 	{
+        //Article::create($request->all());//the request namespace above had to be edited
+        //above is shorthand but does'nt get passed the user id so needs work
+
 		$article = new Article;
 		$article->title = $request->title;
         $article->body =  $request->body;
